@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>This is subscription registration page!</h1>
+    <h2>fill out the following form to subscripe:</h2>
+    <div class="container">
+        <form method="POST">
+            {{ form.as_p}}
+            {% csrf_token %}
+
+            <input type="submit" class="btn btm-primary" value="submit">
+        </form>
+    </div>
+</body>
